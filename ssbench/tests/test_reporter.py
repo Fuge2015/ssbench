@@ -39,7 +39,7 @@ class TestReporterBase(ScenarioFixture, TestCase):
 
         self.stub_results = [
             # Results are actually a list of the lists returned by workers.
-            # Thise lists will just have one element, unless the worker was
+            # These lists will just have one element, unless the worker was
             # using a batch-size > 1, in which case they might have more.
             [self.gen_result(
                 1, ssbench.CREATE_OBJECT, 'small', 100.0, 101.0, 103.0, 0),
